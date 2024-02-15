@@ -10,12 +10,40 @@
 <body>
 <div class="mdiv">
 	<div class="container">
-		<h3>Weather Forecast</h3>
+		<h3 align="center">Weather Forecast</h3>
 		<form>
+			<div class="component">
+				<div>
 			<input type="text" name="city" id="city_name" placeholder="enter a city name">
-			<button type="button" onclick="fetchCity()">
+			<button type="button" class="srch_btn" onclick="fetchCity()">
 				<img src="https://png.pngtree.com/png-clipart/20191121/original/pngtree-search-vector-icon-with-transparent-background-png-image_5156942.jpg" alt="search img" height="20px">
 			</button>
+		</div>
+	</div>
+	<div align="center" style="margin-top: 0px;">
+		<img src="https://cdn-icons-png.freepik.com/256/1163/1163661.png" alt="Weathericon" height="150px">
+	</div>
+	<div align="center" style="margin-top: -20px">
+		<span id="city">CITY NAME</span>
+		<br>
+		<span class="measurement" id="temp">0°C</span>
+	</div>
+	<div align="center" style="margin-top:20px">
+		<table width="100%" cellpadding="10px">
+			<tr align="center">
+				<td>
+					<h5 class="headings">WIND SPEED</h5>
+					<span class="measurement" id="wind_speed">0 km/hr
+					</span>
+				</td>
+				<td>
+					<h4 class="headings">HUMIDITY</h4>
+					<span class="measurement" id="humidity">0 g/kg</span>
+				</td>
+			</tr>
+			
+		</table>
+	</div>
 		</form>
 	</div>
 	
